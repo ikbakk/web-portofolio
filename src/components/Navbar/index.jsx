@@ -9,7 +9,7 @@ export default function NavBar() {
       </div>
       <div className="flex basis-40 items-center px-6 outline outline-2">
         <h2 className="font-syncopate font-semibold md:text-4xl lg:text-5xl">
-          IQBAL FIRDAUS
+          iqbal firdaus
         </h2>
       </div>
       <div className="flex basis-50 items-center justify-end bg-paleGreen px-6 outline outline-2">
