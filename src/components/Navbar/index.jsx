@@ -3,26 +3,47 @@ import { useState } from "react";
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="grid h-20 grid-cols-12 gap-1 bg-white outline outline-2">
-      <div className="col-span-1 col-start-1 flex items-center justify-center bg-white py-4 outline outline-2">
-        <a>
-          <h2>LOGO</h2>
-        </a>
+    <nav className=" flex h-20 flex-row bg-white">
+      <div className="flex shrink-0 basis-5 items-center justify-center px-2 outline outline-2">
+        LOGO
       </div>
-      <div className="col-span-4 col-start-2 flex items-center justify-start bg-white px-4 py-4 outline outline-2">
-        <h2 className=" text-5xl">NAME</h2>
+      <div className="flex basis-40 items-center px-6 outline outline-2">
+        <h2 className="font-syncopate font-semibold md:text-4xl lg:text-5xl">
+          IQBAL FIRDAUS
+        </h2>
       </div>
-      <div className="col-span-6 col-start-6 flex items-center justify-end bg-paleGreen py-4 px-9 outline outline-2">
-        <ul className="flex flex-row space-x-10 text-3xl">
+      <div className="flex basis-50 items-center justify-end bg-paleGreen px-6 outline outline-2">
+        <ul className="flex flex-row items-center space-x-10 font-roboto-mono lg:text-3xl">
           <li>Home</li>
           <li>Skills</li>
           <li>About</li>
+          <li>Contact</li>
         </ul>
       </div>
-      <div className="col-start-12 flex items-center justify-center bg-white py-4 outline outline-2">
-        a
+      <div className="flex shrink-0 basis-5 items-center justify-center px-2 outline outline-2">
+        ICON
       </div>
     </nav>
+    // <nav className="grid h-20 grid-cols-12 gap-1 bg-white outline outline-2">
+    //   <div className="col-span-1 col-start-1 flex items-center justify-center bg-white py-4 outline outline-2">
+    //     <a>
+    //       <h2>LOGO</h2>
+    //     </a>
+    //   </div>
+    //   <div className="col-span-4 col-start-2 flex items-center justify-start bg-white px-4 py-4 outline outline-2">
+    //     <h2 className=" text-5xl">NAME</h2>
+    //   </div>
+    //   <div className="col-span-6 col-start-6 flex items-center justify-end bg-paleGreen py-4 px-9 outline outline-2">
+    //     <ul className="flex flex-row space-x-10 text-3xl">
+    //       <li>Home</li>
+    //       <li>Skills</li>
+    //       <li>About</li>
+    //     </ul>
+    //   </div>
+    //   <div className="col-start-12 flex items-center justify-center bg-white py-4 outline outline-2">
+    //     a
+    //   </div>
+    // </nav>
     // <nav className="bg-white w-full outline outline-2">
     //   <div className="mx-auto justify-between bg-paleYellow px-4 md:flex md:items-center md:px-8 lg:w-full">
     //     <div>
