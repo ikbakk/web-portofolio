@@ -19,7 +19,7 @@ const Home = () => {
           </ul>
         </div>
         <div className="flex basis-90 outline outline-2 outline-fadeBlack">
-          <div className="m-8 flex basis-full flex-wrap p-8 md:flex-nowrap lg:flex-nowrap xl:flex-nowrap">
+          <div className="m-8 flex basis-full flex-wrap space-y-7 p-8 md:flex-nowrap lg:flex-nowrap xl:flex-nowrap">
             <div className="flex basis-1/2 flex-col space-y-6">
               <h1 className="px-8 text-justify font-syncopate text-8xl font-extrabold text-primaryDark">
                 HI, IM<br></br>
@@ -31,12 +31,13 @@ const Home = () => {
                 </h3>
               </div>
               <p className="px-8 py-4 font-roboto-mono text-2xl text-primaryDark">
-                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is
-                simply dummy text of the printing
+                Electrical engineering student who somehow got into web
+                development when try to combine IoT and Web development because
+                of project for his engineering degree.
               </p>
-              <div className="flex px-10">
-                <div className="shadow-offset10l shadow-fadeBlack">
-                  <button className=" outline-3 bg-fadeBlack p-10 font-syncopate text-3xl font-extrabold text-white shadow-offset8l outline outline-fadeBlack duration-200 hover:bg-white hover:text-primaryDark hover:shadow-none active:bg-primaryLight">
+              <div className="flex px-10 py-4">
+                <div className="shadow-offset10l shadow-fadeBlack duration-200 hover:shadow-none">
+                  <button className=" outline-3 bg-fadeBlack p-10 font-syncopate text-3xl font-extrabold text-white shadow-offset8l outline outline-fadeBlack duration-200 hover:bg-white hover:text-primaryDark hover:shadow-offset10l hover:shadow-fadeBlack active:bg-primaryLight">
                     DOWNLOAD CV
                   </button>
                 </div>
