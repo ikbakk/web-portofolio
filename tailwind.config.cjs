@@ -24,6 +24,13 @@ module.exports = {
         syncopate: ["Syncopate"],
         "roboto-mono": ['"Roboto Mono"'],
       },
+      boxShadow: {
+        offset3: "3px 3px 0 1px",
+      },
+      zIndex: {
+        "-1": -1,
+        1: 1,
+      },
     },
   },
   plugins: [],
