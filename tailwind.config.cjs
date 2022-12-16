@@ -19,6 +19,8 @@ module.exports = {
         5: "5%",
         40: "40%",
         50: "50%",
+        60: "60",
+        90: "90%",
       },
       fontFamily: {
         syncopate: ["Syncopate"],
