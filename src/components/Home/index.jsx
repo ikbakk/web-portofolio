@@ -18,7 +18,7 @@ const Home = () => {
         </div>
         {/* Mid */}
         {/* RightSide */}
-        <div className="flexshrink-0 basis-5"></div>
+        <div className="flex shrink-0 basis-5"></div>
         {/* RightSide */}
       </div>
     </div>

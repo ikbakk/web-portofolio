@@ -24,7 +24,7 @@ const HomeHeader = ({ name }) => {
         </div>
       </div>
       <div className=" flex basis-full items-center justify-center p-2">
-        <PhotoCard src="#" />
+        <PhotoCard url="https://www.w3schools.com/w3css/img_avatar3.png" />
       </div>
     </div>
   );
