@@ -12,19 +12,15 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState("Home");
   const icon = (navbar) => {
     if (navbar === "Home") {
-      return <MdOutlineHome className="sm:text-2xl md:text-4xl lg:text-6xl" />;
+      return <MdOutlineHome />;
     } else if (navbar === "Skills") {
-      return (
-        <MdOutlinePsychology className="sm:text-2xl md:text-4xl lg:text-6xl" />
-      );
+      return <MdOutlinePsychology />;
     } else if (navbar === "About") {
-      return <MdInfoOutline className="sm:text-2xl md:text-4xl lg:text-6xl" />;
+      return <MdInfoOutline />;
     } else if (navbar === "Contact") {
-      return (
-        <MdOutlineContacts className="sm:text-2xl md:text-4xl lg:text-6xl" />
-      );
+      return <MdOutlineContacts />;
     } else {
-      return <MdStarRate className="sm:text-2xl md:text-4xl lg:text-6xl" />;
+      return <MdStarRate />;
     }
   };
   const menu = [
@@ -36,7 +32,7 @@ export default function NavBar() {
 
   return (
     <nav className="fixed top-0 z-10 flex h-20 w-full flex-row bg-white outline outline-2 outline-fadeBlack">
-      <div className="flex shrink-0 grow-0 basis-5 items-center justify-center px-2">
+      <div className="flex shrink-0 grow-0 basis-5 items-center justify-center px-2 duration-300 sm:text-2xl md:text-4xl lg:text-6xl">
         {icon(navbar)}
       </div>
       <div className="flex basis-90 outline outline-2 outline-fadeBlack">
@@ -67,7 +63,7 @@ export default function NavBar() {
           </ul>
         </div>
       </div>
-      <div className="flex shrink-0 basis-5 items-center justify-center px-2">
+      <div className="flex shrink-0 basis-5 items-center justify-center px-2 duration-300 sm:text-2xl md:text-4xl lg:text-6xl">
         {icon(navbar)}
       </div>
     </nav>
