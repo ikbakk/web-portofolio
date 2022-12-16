@@ -28,6 +28,9 @@ module.exports = {
       },
       boxShadow: {
         offset3: "3px 3px 0 1px",
+        offset10: "10px 10px 0 2px",
+        offset10l: "-8px 8px 0 3px",
+        offset8l: "-7px 7px 0 1px",
       },
       zIndex: {
         "-1": -1,
