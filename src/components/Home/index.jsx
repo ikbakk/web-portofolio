@@ -1,12 +1,10 @@
 import React from "react";
-import { MdOutlineHome } from "react-icons/md";
 import {
   RiFacebookBoxLine,
   RiLinkedinBoxLine,
   RiInstagramLine,
   RiGithubLine,
 } from "react-icons/ri";
-import PhotoStack from "../photoStack";
 
 const Home = () => {
   const icon = [
@@ -25,7 +23,7 @@ const Home = () => {
             {icon.map((item, id) => (
               <li key={id}>
                 <a
-                  className="duration-300 sm:text-2xl md:text-4xl lg:text-6xl"
+                  className="text-fadeBlack duration-300 hover:text-paleGreen sm:text-2xl md:text-4xl lg:text-6xl"
                   href={item.url}
                   target="_blank">
                   {item.name}
@@ -36,8 +34,8 @@ const Home = () => {
         </div>
         <div className="flex basis-90 outline outline-2 outline-fadeBlack">
           <div className="m-8 flex basis-full flex-wrap space-y-7 p-8 lg:flex-nowrap xl:flex-nowrap">
-            <div className="flex basis-full flex-col space-y-6 ">
-              <h1 className="px-8 text-left font-syncopate text-6xl font-extrabold text-primaryDark duration-300 md:text-6xl lg:text-8xl">
+            <div className="flex basis-full flex-col space-y-4 ">
+              <h1 className="mt-5 px-8 text-left font-syncopate text-6xl font-extrabold text-primaryDark duration-300 md:text-6xl lg:text-8xl">
                 HI, IM<br></br>
                 {name}
               </h1>
