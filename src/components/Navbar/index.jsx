@@ -12,15 +12,19 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState("Home");
   const icon = (navbar) => {
     if (navbar === "Home") {
-      return <MdOutlineHome size={38} />;
+      return <MdOutlineHome className="sm:text-4xl md:text-5xl lg:text-6xl" />;
     } else if (navbar === "Skills") {
-      return <MdOutlinePsychology size={38} />;
+      return (
+        <MdOutlinePsychology className="sm:text-4xl md:text-5xl lg:text-6xl" />
+      );
     } else if (navbar === "About") {
-      return <MdInfoOutline size={38} />;
+      return <MdInfoOutline className="sm:text-4xl md:text-5xl lg:text-6xl" />;
     } else if (navbar === "Contact") {
-      return <MdOutlineContacts size={38} />;
+      return (
+        <MdOutlineContacts className="sm:text-4xl md:text-5xl lg:text-6xl" />
+      );
     } else {
-      return <MdStarRate size={38} />;
+      return <MdStarRate className="sm:text-4xl md:text-5xl lg:text-6xl" />;
     }
   };
   const menu = [
