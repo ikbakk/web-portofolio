@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Home from "./components/Page";
+import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
         data-theme={dark === true ? "halloween" : "fantasy"}>
         <Header setDark={setDark} dark={dark} />
         <Home />
+        <Footer dark={dark} />
       </div>
     </BrowserRouter>
   );
