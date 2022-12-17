@@ -7,7 +7,7 @@ const Home = () => {
       // style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}>
     >
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content -mt-5 max-w-8xl flex-col lg:mt-32 lg:flex-row-reverse">
+      <div className="hero-content -mt-5 mb-20 max-w-8xl flex-col lg:mt-32 lg:flex-row-reverse">
         <img
           src="https://placeimg.com/260/400/arch"
           className="mask mask-squircle max-w-lg rounded-lg shadow-2xl"
