@@ -12,7 +12,7 @@ const Home = () => {
           src="https://placeimg.com/260/400/arch"
           className="mask mask-squircle max-w-lg rounded-lg shadow-2xl"
         />
-        <div className="">
+        <div className="-my-20">
           <article className="prose text-center text-2xl lg:text-left lg:text-5xl">
             <h1 className="font-syncopate font-bold uppercase text-white">
               Hi! I'm <br /> Muhammad Iqbal Firdaus
