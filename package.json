@@ -1,7 +1,6 @@
 {
   "name": "portofolio",
   "private": true,
-  "homepage": "https://ikbakk.github.io/web-portofolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
