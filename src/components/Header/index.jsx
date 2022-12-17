@@ -6,7 +6,7 @@ const Header = ({ setDark, dark }) => {
   const MenuItems = () =>
     menu.map((item) => {
       return (
-        <li className="font-roboto-mono">
+        <li className="hover-bordered font-roboto-mono">
           <a>{item.name}</a>
         </li>
       );
@@ -15,7 +15,7 @@ const Header = ({ setDark, dark }) => {
   return (
     <nav
       className={`navbar fixed z-50 space-x-10 ${
-        dark === true ? "bg-base-200" : "bg-accent-focus "
+        dark === true ? "bg-base-200" : "bg-accent-focus"
       }  py-5 duration-100`}>
       <div className="navbar-start">
         <div className="dropdown">
@@ -36,13 +36,15 @@ const Header = ({ setDark, dark }) => {
           </label>
           <ul
             tabIndex={0}
-            className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 text-xl shadow">
+            className={`dropdown-content menu rounded-box menu-normal mt-6 w-52 ${
+              dark === true ? "bg-base-200" : "bg-accent-focus"
+            } p-2 text-xl shadow`}>
             <MenuItems />
           </ul>
         </div>
         <a
           href="/"
-          className="btn-ghost btn font-syncopate text-5xl normal-case">
+          className="btn-ghost btn font-syncopate text-3xl normal-case md:text-4xl lg:text-5xl">
           <h1>Portofolio</h1>
         </a>
       </div>
@@ -51,7 +53,7 @@ const Header = ({ setDark, dark }) => {
           <MenuItems />
         </ul>
       </div>
-      <div className="navbar-end font-syncopate text-xl font-semibold">
+      <div className="text-md navbar-end font-syncopate font-semibold md:text-lg lg:text-xl">
         <div className="flex flex-row space-x-4">
           <h3>Night Mode</h3>
           <input
