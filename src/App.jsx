@@ -9,11 +9,9 @@ const App = () => {
     <BrowserRouter>
       <div
         className="w-screen"
-        data-theme={dark === true ? "forest" : "garden"}>
+        data-theme={dark === true ? "halloween" : "fantasy"}>
         <Header setDark={setDark} dark={dark} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <Home />
       </div>
     </BrowserRouter>
   );
