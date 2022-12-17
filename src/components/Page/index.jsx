@@ -7,12 +7,12 @@ const Home = () => {
       // style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}>
     >
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className=" mt-30 hero-content max-w-8xl flex-col  lg:flex-row-reverse">
+      <div className="hero-content -mt-5 max-w-8xl flex-col lg:mt-32 lg:flex-row-reverse">
         <img
           src="https://placeimg.com/260/400/arch"
           className="mask mask-squircle max-w-lg rounded-lg shadow-2xl"
         />
-        <div className="-my-20">
+        <div className="-my-20 lg:my-0">
           <article className="prose text-center text-2xl lg:text-left lg:text-5xl">
             <h1 className="font-syncopate font-bold uppercase text-white">
               Hi! I'm <br /> Muhammad Iqbal Firdaus
