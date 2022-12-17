@@ -13,7 +13,10 @@ const Header = ({ setDark, dark }) => {
     });
 
   return (
-    <nav className="navbar space-x-10 bg-base-100 py-5 duration-100">
+    <nav
+      className={`navbar fixed z-50 space-x-10 ${
+        dark === true ? "bg-base-200" : "bg-accent-focus "
+      }  py-5 duration-100`}>
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn-ghost btn lg:hidden">
@@ -37,8 +40,10 @@ const Header = ({ setDark, dark }) => {
             <MenuItems />
           </ul>
         </div>
-        <a className="btn-ghost btn font-syncopate text-5xl normal-case">
-          Portofolio
+        <a
+          href="/"
+          className="btn-ghost btn font-syncopate text-5xl normal-case">
+          <h1>Portofolio</h1>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
