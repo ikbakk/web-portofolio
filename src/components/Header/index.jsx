@@ -54,8 +54,7 @@ const Header = ({ setDark, dark }) => {
         </ul>
       </div>
       <div className='text-md navbar-end font-syncopate font-semibold md:text-lg lg:text-xl'>
-        <div className='flex flex-row space-x-4'>
-          <h3>Night Mode</h3>
+        <div className=''>
           <input
             type='checkbox'
             onClick={() => {
