@@ -27,7 +27,9 @@ const Header = () => {
           </a>
         </li>
       ) : (
-        <li className='hover-bordered '>
+        <li
+          className='tooltip tooltip-bottom tooltip-primary font-roboto-mono hover:text-primary'
+          data-tip={item.name}>
           <a target='_blank' href={item.link}>
             {item.icon}
           </a>
@@ -67,7 +69,7 @@ const Header = () => {
         </div>
         <a
           href='/'
-          className='btn-ghost btn font-syncopate text-xl uppercase md:text-xl lg:text-3xl'>
+          className='btn-ghost btn font-syncopate text-xl uppercase hover:bg-primary hover:text-base-200 md:text-xl lg:text-3xl'>
           <h1>{import.meta.env.VITE_NAME}</h1>
         </a>
       </div>
@@ -75,7 +77,7 @@ const Header = () => {
         <ul className='menu menu-horizontal hidden px-1 text-3xl lg:flex'>
           <MenuItems bool={false} />
         </ul>
-        <div className='btn-outline btn-primary btn space-x-3 text-lg'>
+        <div className='btn-outline btn-primary btn space-x-3 text-lg duration-100 '>
           <p>Resume</p>
           <div className='-mt-1'>
             <BsDownload />

@@ -17,7 +17,7 @@ const Home = () => {
             <h1 className='font-roboto-mono font-bold uppercase text-white'>
               I'm an Electrical Engineering student who learn Web Development
             </h1>
-            <h2 className='max-w-5xl text-justify font-roboto-mono text-white'>
+            <h2 className='max-w-5xl text-justify font-roboto-mono text-white duration-200'>
               Currently learning{' '}
               <TypeIt
                 options={{
