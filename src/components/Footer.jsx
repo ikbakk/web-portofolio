@@ -1,11 +1,8 @@
 import React from 'react'
 
-const Footer = ({ dark }) => {
+const Footer = () => {
   return (
-    <footer
-      className={`footer footer-center ${
-        dark === false ? 'bg-accent-focus' : 'bg-base-200'
-      }  p-10 `}>
+    <footer className={'footer footer-center bg-base-200  p-10'}>
       <div>
         <svg
           width='50'
