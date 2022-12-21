@@ -3,14 +3,12 @@ import SkillCard from './SkillCard'
 
 const Skill = () => {
   return (
-    <div className='hero bg-base-300 py-20'>
-      <div className='card-body h-full'>
-        <h1 className='-mt-10 mb-20 text-center font-syncopate text-7xl font-bold uppercase'>
+    <div className='hero bg-base-300 lg:min-h-screen '>
+      <div className='card-body'>
+        <h1 className='text-center font-syncopate text-4xl font-bold uppercase lg:text-7xl'>
           Skills
         </h1>
-        <div className='max-w-full rounded-3xl bg-base-100'>
-          <SkillCard />
-        </div>
+        <SkillCard />
       </div>
     </div>
   )

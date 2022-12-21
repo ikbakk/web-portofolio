@@ -36,14 +36,14 @@ const SkillCard = () => {
         ))}
       </div>
       <div className='lg:hidden'>
-        <div className='grid justify-center gap-3 md:grid-cols-3 '>
+        <div className='grid justify-center gap-5'>
           {skills.map((item) => (
-            <div id={item.id} className='carousel-item w-full'>
-              <div className='card my-10 bg-primary text-primary-content'>
-                <div className='card-body'>
-                  <h2 className='card-title'>{item.title}</h2>
-                </div>
-              </div>
+            <div className='grid max-w-full grid-cols-2 rounded-3xl bg-base-100 p-10'>
+              <h2>{item.title}</h2>
+              <progress
+                className='progress-primary max-w-full'
+                value='75'
+                max='100'></progress>
             </div>
           ))}
         </div>
