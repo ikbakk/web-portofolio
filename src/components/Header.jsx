@@ -69,7 +69,7 @@ const Header = () => {
         </div>
         <a
           href='/'
-          className='btn-ghost btn font-syncopate text-xl uppercase hover:bg-primary hover:text-base-200 md:text-xl lg:text-3xl'>
+          className='text-md btn-ghost btn font-syncopate uppercase hover:bg-primary hover:text-base-200 md:text-xl lg:text-3xl'>
           <h1>{import.meta.env.VITE_NAME}</h1>
         </a>
       </div>

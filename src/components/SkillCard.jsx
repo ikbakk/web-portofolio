@@ -36,7 +36,7 @@ const SkillCard = () => {
         ))}
       </div>
       <div className='lg:hidden'>
-        <div className='grid grid-cols-3 justify-center gap-3 md:grid-cols-3 '>
+        <div className='grid justify-center gap-3 md:grid-cols-3 '>
           {skills.map((item) => (
             <div id={item.id} className='carousel-item w-full'>
               <div className='card my-10 bg-primary text-primary-content'>
