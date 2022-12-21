@@ -10,9 +10,9 @@ const SkillCard = () => {
     },
     {
       id: 2,
-      title: 'Javascript',
+      title: 'React',
       explanation:
-        'Hands on experience with JavaScript on several projects. The language have been used mostly with NPMjs to ensure easier dependency managing and easier development. Because of JavaScript loose typing, I have learned how not to lose my nerves after getting a random exception that has nothing to do with the real bug and how to debug these issues efficiently (not only in js).'
+        'Hands on experience with React started because of my first project which is my college final year project. I have learned how not to hard code everything and not repeating myself as much as possible after randomly jump into react while learning javascript. Then re-learn the concept in much proper way than before and patiently which make me easier to understand the concept better than before i was started learn React.'
     },
     {
       id: 3,
@@ -23,13 +23,15 @@ const SkillCard = () => {
   ]
 
   return (
-    <div className='text-justify font-roboto-mono'>
-      <div className='hidden lg:grid lg:grid-cols-3'>
+    <div className=' flex justify-center text-justify font-roboto-mono'>
+      <div className='hidden lg:grid lg:grid-cols-3 lg:gap-10'>
         {skills.map((item) => (
-          <div className='card my-10 w-96 bg-primary text-primary-content lg:mx-20 lg:my-10'>
+          <div className='card prose my-10 bg-primary text-primary-content lg:my-10'>
             <div className='card-body'>
-              <h2 className='card-title'>{item.title}</h2>
-              <p>{item.explanation}</p>
+              <h1 className='card-title text-4xl text-base-200'>
+                {item.title}
+              </h1>
+              <p className='text-lg'>{item.explanation}</p>
               <div className='card-actions justify-end'></div>
             </div>
           </div>
