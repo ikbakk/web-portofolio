@@ -13,4 +13,5 @@ html {
 
 body {
   height: 100vh;
+  overflow-anchor: none;
 }

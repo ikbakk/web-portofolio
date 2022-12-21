@@ -1,5 +1,6 @@
 import React from 'react'
 import TypeIt from 'typeit-react'
+import hero_image from '../assets/images/hero_image.png'
 
 const Home = () => {
   return (
@@ -7,10 +8,7 @@ const Home = () => {
       <div className='hero-overlay bg-opacity-60'></div>
       <div className='hero-content mb-20 max-w-8xl flex-col space-y-20 lg:m-20 lg:flex-row-reverse'>
         <div className='flex w-1/2 items-center justify-center lg:mt-0 lg:mb-0 lg:w-auto'>
-          <img
-            src='/src/assets/images/hero_image.png'
-            className='rounded-lg lg:max-w-3xl'
-          />
+          <img src={hero_image} className='rounded-lg lg:max-w-3xl' />
         </div>
         <div className='space-y p-10 '>
           <div className='prose text-left text-2xl lg:text-left lg:text-2xl'>
