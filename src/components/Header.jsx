@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa'
 import { BsDownload } from 'react-icons/bs'
+import SVGComponent from './Logo'
 
 const Header = () => {
   const menu = [
@@ -66,6 +67,9 @@ const Header = () => {
             }>
             <MenuItems bool={true} />
           </ul>
+        </div>
+        <div className='mx-5'>
+          <SVGComponent className='h-10 w-10 fill-neutral-content duration-75 hover:scale-110 hover:fill-primary lg:h-10 lg:w-10' />
         </div>
         <a
           href='/'
